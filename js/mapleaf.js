@@ -24,3 +24,17 @@ var map = L.map('map').setView([52.377956, 4.897070], 13);
 			'format': 'image/png',
 			'transparent': true
 		}).addTo(map);
+		
+		//Array en loops toevoegen
+		const arrayVanPlaatsnamen = ['Amsterdam', 'Soesterberg', 'Almere', 'Oss', 'Utrecht'];
+		
+		for (let index = 0; index < arrayVanPlaatsnamen.length; index++) {
+			const woonplaats = arrayVanPlaatsnamen[index];
+			
+			const node = document.createElement("button");
+			const textnode = document.createTextNode(woonplaats);
+			node.appendChild(textnode);
+			
+			document.getElementById('header').appendChild(node);
+		};
+		

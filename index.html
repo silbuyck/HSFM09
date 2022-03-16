@@ -1,9 +1,19 @@
 <html>
 
 <header>
+	<script src='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.js'></script>
+	<link href='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.css' rel='stylesheet' />
 </header>
 <body>
-<p> werkt deze bende haa</p>
+	<div id='map' style='width: 400px; height: 300px;'></div>
+		<script>
+		var map = new maplibregl.Map({
+			container: 'map',
+			style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
+			center: [4.897070, 52.377956], // starting position [lng, lat]
+			zoom: 1 // starting zoom
+		});
+		</script>
 </body>
 
 </html>
