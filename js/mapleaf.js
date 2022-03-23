@@ -9,21 +9,21 @@ var leafletmap = L.map('map').setView([52.377956, 4.897070], 13);
 			}).addTo(leafletmap);
 			
 			// ADD WFS layer
-		const cbs = L.tileLayer.wms('https://geodata.nationaalgeoregister.nl/ahn3/wms', {
-			'layers': 'ahn3_5m_dtm',
-			'styles': 'ahn3:ahn3_5m_detail',
-			'srs': 'EPSG:28992',
-			'format': 'image/png',
-			'transparent': true
-		}).addTo(leafletmap);
-		
-		//const geoserverWFSBuurt = L.tileLayer.wms('http://localhost:8001/geoserver/ows', {
-			//'layers': 'buurt_2019_v1',
-			//'styles': 'polygon',
+		//const cbs = L.tileLayer.wms('https://geodata.nationaalgeoregister.nl/ahn3/wms', {
+			//'layers': 'ahn3_5m_dtm',
+			//'styles': 'ahn3:ahn3_5m_detail',
 			//'srs': 'EPSG:28992',
 			//'format': 'image/png',
 			//'transparent': true
 		//}).addTo(leafletmap);
+		
+		const geoserverWFSBuurt = L.tileLayer.wms('http://localhost:8001/geoserver/ows', {
+			'layers': 'buurt_2019_v1',
+			'styles': 'polygon',
+			'srs': 'EPSG:28992',
+			'format': 'image/png',
+			'transparent': true
+		}).addTo(leafletmap);
 		
 		//Array en loops toevoegen
 		
