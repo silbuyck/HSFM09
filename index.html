@@ -1,23 +1,49 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<script src='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.js'></script>
 		<link href='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.css' rel='stylesheet'/>
-		 <title>Index</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""/>
+		<link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.13.0/css/ol.css" type="text/css">
+		<script src='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.js'></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		   crossorigin=""></script>
+		<script src="https://cdn.jsdelivr.net/npm/terraformer"></script>
+		<script src="https://unpkg.com/@terraformer/wkt"></script>
+		<script src="https://js.arcgis.com/4.22/"></script>
+		<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.13.0/build/ol.js"></script>
+
+		<title>Index</title>
+		 
 	</head>
 	<body>
-		<div id='map' style='width: 400px; height: 300px;'></div>
-			<script>
-			var map = new maplibregl.Map({
-				container: 'map',
-				style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
-				center: [4.897070, 52.377956], // starting position [lng, lat]
-				zoom: 1 // starting zoom
-			});
+		<div id="mapLibre" style='width: 400px; height: 300px;'>
+			<script type= "text/javascript" src= "js/mapLibre.js"> 
 			</script>
-			<iframe title="Temperature" aria-label="Interactive line chart" id="datawrapper-chart-gKaBs" src="https://datawrapper.dwcdn.net/gKaBs/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="566">
-			</iframe>
-			<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+		</div>
+		
+		<div id="mapLeaflet" style='width: 400px; height: 300px;'>
+			<script type= "text/javascript" src= "js/mapLeaflet.js"> 
 			</script>
+		</div>
+		
+		<div id="mapArcGisApi" style='width: 400px; height: 300px;'>
+			<script type= "text/javascript" src= "js/mapArcGisApi.js"> 
+			</script>
+		</div>
+		
+		<div id="mapOpenLayer" style='width: 400px; height: 300px;'>
+			<script type= "text/javascript" src= "js/mapOpenLayer.js"> 
+			</script>
+		</div>
+			
+		<iframe title="Temperature" aria-label="Interactive line chart" id="datawrapper-chart-gKaBs" src="https://datawrapper.dwcdn.net/gKaBs/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="566">
+		</iframe>
+		<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+		</script>
+		
 	</body>
 </html>
