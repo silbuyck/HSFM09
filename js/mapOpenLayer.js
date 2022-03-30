@@ -1,4 +1,4 @@
-var maplayer = new ol.Map({
+var openlayer = new ol.Map({
         target: 'mapOpenLayer',
         layers: [
           new ol.layer.Tile({
