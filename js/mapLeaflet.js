@@ -25,3 +25,14 @@ var leafletmap = L.map('mapLeaflet').setView([52.377956, 4.897070], 13);
 			'transparent': true
 		}).addTo(leafletmap);
 		
+		const indonesiaPopLayer = L.esri.featureLayer({
+			url: 'https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/Indonesia_Population_map_layers/FeatureServer/0',
+			style: {
+			weight: 1,
+			opacity: 0.5,
+			color: 'white',
+			fillOpacity: 0.5,
+			fillColor: '#FFEDA0'
+			}
+		}).addTo(leafletmap);
+		

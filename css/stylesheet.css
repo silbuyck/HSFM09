@@ -7,10 +7,21 @@
 	display: grid;
 }
 
+.grid-item1 {
+	background-color: #18243f;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	margin-left: 5px;
+}
+
 ul.mainMenu {
 	width: auto;
 	float: right; 
 	display: table;
+	margin-top: 25px;
 }
 
 li {
@@ -21,6 +32,12 @@ li {
 	font-size: 16px;
 }
 
-li a:hover {
-	color: lime;
+li a {
+	color: #cdac4e;
+	text-decoration: none;
 }
+
+li a:hover {
+	color: #3bb385;
+}
+
