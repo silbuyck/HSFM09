@@ -5,10 +5,13 @@
 
 .grid-container {
 	display: grid;
+	background-color: #18243f;
+	width: 1000px;
 }
 
 .grid-item1 {
 	background-color: #18243f;
+	height: 50px;
 }
 
 .logo {
