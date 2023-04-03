@@ -15,8 +15,8 @@
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	margin-left: 5px;
 }
 
@@ -24,7 +24,7 @@ ul.mainMenu {
 	width: auto;
 	float: right; 
 	display: table;
-	margin-top: 25px;
+	margin-top: 5px;
 }
 
 li {
