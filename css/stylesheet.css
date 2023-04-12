@@ -3,22 +3,31 @@
 	src: url(./fonts/AvenirNextLTPro-Regular.otf);
 }
 
+.body {
+	background-color: #18243f;
+
+	
+}
+
 .grid-container {
 	display: grid;
 	background-color: #18243f;
-	width: 1200px;
-	vertical-align: middle;
-	filter: drop-shadow(2px 3px 2px #000000);
+	align-items: center;
+	width: 750px;
+	float: none;
+	margin: 0 auto;
 }
 
 .grid-item1 {
 	background-color: #18243f;
-	height: 50px;
+	height: 75px;
+	vertical-align: middle;
+	filter: drop-shadow(2px 3px 2px #000000);
 }
 
 .logo {
-	width: 50px;
-	height: 50px;
+	width: 75px;
+	height: 75px;
 	margin-left: 5px;
 }
 
@@ -26,7 +35,7 @@ ul.mainMenu {
 	width: auto;
 	float: right; 
 	display: table;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 li {
@@ -46,3 +55,24 @@ li a:hover {
 	color: #3bb385;
 }
 
+th {
+	width: 50%;
+}
+
+td {
+	vertical-align: top;
+}
+
+h1 { 
+	font-size:30px; 
+	color: white;
+}
+
+table { 
+	width: 100%;
+}
+
+/*.koptekst {
+	color: white;
+	font-size: 30px;
+}

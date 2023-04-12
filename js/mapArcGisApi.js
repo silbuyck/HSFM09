@@ -8,9 +8,23 @@ require(["esri/config","esri/Map", "esri/views/MapView"], function (esriConfig,M
 		
 	const view = new MapView({
         map: map,
-        center: [-118.805, 34.027], // Longitude, latitude
-        zoom: 13, // Zoom level
+        center: [117.280689, -0.846022], // Longitude, latitude
+        zoom: 3, // Zoom level
         container: "mapArcGisApi" // Div element
     });
+		 
+  const geoJson = L.geoJson().addTo(map);
 
-});
+    function zoomOnClick() {
+      map.setView( [117.280689, -0.846022], 3)
+
+      fetch('https://github.com/georgique/world-geojson/blob/dc7d0ff0b36b3694df9a153566cdc964a183d213/countries/indonesia.json')
+        .then(response => response.json())
+        .then(data => {
+          const wkt = data.response.docs[0].geometrie_ll
+		  
+          const geojson = Terraformer.wktToGeoJSON(wkt)
+          console.log(geojson)
+          geoJsonLayer.addData(geojson)
+        })
+    }
