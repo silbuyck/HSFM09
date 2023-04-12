@@ -5,15 +5,13 @@
 
 .body {
 	background-color: #18243f;
-
-	
 }
 
 .grid-container {
 	display: grid;
 	background-color: #18243f;
 	align-items: center;
-	width: 750px;
+	width: 1000px;
 	float: none;
 	margin: 0 auto;
 }
@@ -63,16 +61,15 @@ td {
 	vertical-align: top;
 }
 
-h1 { 
-	font-size:30px; 
-	color: white;
-}
-
 table { 
 	width: 100%;
+	padding: 8px;
 }
 
-/*.koptekst {
+#koptekst {
 	color: white;
-	font-size: 30px;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	margin-top: -10px;
 }
