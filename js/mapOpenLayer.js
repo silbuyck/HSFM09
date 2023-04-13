@@ -19,7 +19,7 @@ const key = 'ra5kynhRPGd1fkCh3rvE';
         target: 'mapOL',
         view: new ol.View({
           constrainResolution: true,
-          center: ol.proj.fromLonLat([16.62662018, 49.2125578]),
-          zoom: 14
+          center: ol.proj.fromLonLat([117.280689, -0.846022]),
+          zoom: 4
         })
       });
