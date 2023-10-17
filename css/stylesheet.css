@@ -4,12 +4,12 @@
 }
 
 .body {
-	background-color: #18243f;
+	background-color: #f8f8f8;
 }
 
 .grid-container {
 	display: grid;
-	background-color: #18243f;
+	background-color: #f8f8f8;
 	align-items: center;
 	width: 1000px;
 	float: none;
@@ -17,10 +17,10 @@
 }
 
 .grid-item1 {
-	background-color: #18243f;
+	background-color: #f8f8f8;
 	height: 75px;
 	vertical-align: middle;
-	filter: drop-shadow(2px 3px 2px #000000);
+	filter: drop-shadow(2px 3px 2px #8c8c8c);
 }
 
 .logo {
@@ -45,12 +45,12 @@ li {
 }
 
 li a {
-	color: #cdac4e;
+	color: #000000;
 	text-decoration: none;
 }
 
 li a:hover {
-	color: #3bb385;
+	color: #8c8c8c;
 }
 
 th {
@@ -64,10 +64,11 @@ td {
 table { 
 	width: 100%;
 	padding: 8px;
+	color: black;
 }
 
 .koptekst {
-	color: white;
+	color: black;
 	text-align: center;
 	font-size: 25px;
 	padding: 10px;
@@ -75,6 +76,6 @@ table {
 }
 
 .paragraaf	{
-	color: white;
+	color: black;
 	padding: 10px;
 }

@@ -8,8 +8,8 @@ require(["esri/config","esri/Map", "esri/views/MapView"], function (esriConfig,M
 		
 	const view = new MapView({
         map: map,
-        center: [117.280689, -0.846022], // Longitude, latitude
-        zoom: 4, // Zoom level
+        center: [115.136935, -8.428763], // Longitude, latitude
+        zoom: 9, // Zoom level
         container: "mapArcGisApi" // Div element
     });
 	

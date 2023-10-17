@@ -28,14 +28,14 @@
 			
 			<ul class="mainMenu">
 				<li id="home"><a href="index.html"><b>Home</b></a></li> 
-				<li id="test"><a href="index.html"><b>Jakarta</b></a></li>
-				<li id="test"><a href="index.html"><b>Bali</b></a></li> 
-				<li id="test"><a href="index.html"><b>Yogyakarta</b></a></li> 
+				<li id="1"><a href="index.html#Jakarta"><b>Jakarta</b></a></li>
+				<li id="2"><a href="index.html#Bali"><b>Bali</b></a></li> 
+				<li id="3"><a href="index.html#Jogja"><b>Yogyakarta</b></a></li> 
 			</ul>
 		</div>
 		
 		<br>
-		<div class="koptekst" <h1> <b>Maplibre</b> </h1></div>
+		<div class="koptekst"><h1> <b>Maplibre</b> </h1></div>
 		<div class="grid-item2">
 			<div id="mapLibre" style='width: 100%; height: 300px;'>
 				<script type= "text/javascript" src= "js/mapLibre.js"> 
@@ -50,18 +50,22 @@
 				<th>Problemen</th>
 			</tr>
 			<tr>
-				<td>Maplibre is makkelijk te gebruiken en heeft een unieke basemap. Ik vind de kaartviewer erg mooi en geeft een soort atlas achtige sfeer.
+				<td>Maplibre is makkelijk te gebruiken en heeft een unieke basemap. Ik vind de kaartviewer erg mooi en geeft een soort atlas achtige sfeer. Ik heb bij MapLibre een custom basemap van MapTiler toegevoegd.
 				</td>
 				<td>Geen
 				</td>
 			</tr>
+			<tr>
+				<td> <img src="pictures/jak.jpg" alt="jak" style="width:487px;height:100%;"> </td>
+				<td> <img src="pictures/jak2.jpg" alt="jak2" style="width:487px;height:100%;"> </td>
+			</tr>
 		</table>
-		
+	
 		</div>
 		
 		<br>
 		
-		<div class="koptekst" <h1> <b>Leaflet</b> </h1></div>
+		<div class="koptekst" id ="Jakarta"> <h1> <b>Leaflet</b> </h1></div>
 		<div id="mapLeaflet" style='width: 100%; height: 300px;'>
 			<script type= "text/javascript" src= "js/mapLeaflet.js"> 
 			</script>
@@ -74,17 +78,21 @@
 				<th>Problemen</th>
 			</tr>
 			<tr>
-				<td>Leaflet is de bekendste en in mijn ogen de best beschreven js kaartviewer. Er is veel documentatie aanwezig wat erg helpt met het opzetten van de pagina. Het toevoegen van een GeoJSON ging zonder al teveel moeite. 
+				<td>Leaflet is de bekendste en in mijn ogen de best beschreven js kaartviewer. Er is veel documentatie aanwezig wat erg helpt met het opzetten van de pagina. Het toevoegen van een GeoJSON ging zonder al teveel moeite. De GeoServer is alleen te zien op mijn laptop, omdat de laag lokaal gehost wordt.
 				</td>
 				<td>Het toevoegen van de GeoServer was best veel werk. Dit had ik vorig jaar gelukkig gedaan tijdens de lessenreeks.
 				</td>
+			</tr>
+			<tr>
+				<td> <img src="pictures/jakarta.jpg" alt="jakarta" style="width:487px;height:100%;"> </td>
+				<td> <img src="pictures/jakarta2.jpg" alt="jakarta2" style="width:487px;height:100%;"> </td>
 			</tr>
 		</table>
 		
 		</div>
 		
 		<br>
-		<div class="koptekst" <h1> <b>ArcGISAPI</b> </h1></div>
+		<div class="koptekst"id ="Bali"> <h1> <b>ArcGISAPI</b> </h1></div>
 		<div id="mapArcGisApi" style='width: 100%; height: 300px;'>
 			<script type= "text/javascript" src= "js/mapArcGisApi.js"> 
 			</script>
@@ -102,13 +110,17 @@
 				<td>Het toevoegen van de WFS is niet goed gelukt uiteindelijk. Na veel uren besteed te hebben om het op te lossen heb ik het voor nu zo gelaten.
 				</td>
 			</tr>
+			<tr>
+				<td> <img src="pictures/bali.jpg" alt="bali" style="width:487px;height:100%;"> </td>
+				<td> <img src="pictures/bali2.jpg" alt="bali2" style="width:487px;height:100%;"> </td>
+			</tr>
 		</table>
 		
 		</div>
 		
 		<br>
 		
-		<div class="koptekst" <h1> <b>Openlayers</b> </h1></div>
+		<div class="koptekst" id ="Jogja"><h1> <b>Openlayers</b> </h1></div>
 		<div id="mapOL" style='width: 100%; height: 300px;'>
 			<script type= "text/javascript" src= "js/mapOpenLayer.js"> 
 			</script>
@@ -126,8 +138,11 @@
 				<td>Openlayers is het probleemkind geweest van deze website. Vorig jaar tijdens het reguliere toetsmoment werkte de viewer goed, maar nu ik aan de herkansing ging werken niet meer. De basis van de kaartviewer was erg veranderd waardoor het lastig werd om zonder Openlayers te downloaden de kaart te laten zien
 				</td>
 			</tr>
+			<tr>
+				<td> <img src="pictures/jogja.jpg" alt="jogja" style="width:487px;height:100%;"> </td>
+				<td> <img src="pictures/jogja2.jpg" alt="jogja2" style="width:487px;height:100%;"> </td>
+			</tr>
 		</table>
-		
 		</div>
 		
 		<br>
@@ -142,7 +157,7 @@
 		</div>
 		
 		<div class='paragraaf'>
-		<p> De Google Maps Embed was makkelijk te implementeren in de website. Het is een simpele manier om toch een kaart op je html website te laten zien.
+		<p> De Google Maps Embed was makkelijk te implementeren in de website. Het is een simpele manier om toch een kaart op je html website te laten zien. Je maakt een iframe en voegt een url naar de online kaart toe om de kaart te laten zien binnnen het iframe. Deze stappen zijn terug te vinden in de Google Maps documentatie
 		</p>
 		</div>
 		
@@ -152,7 +167,7 @@
 		<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/13493641"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 		
 		<div class='paragraaf'>
-		<p> De bart chart race heb ik gemaakt met Flourish Studio. Het is een leuke, bewegende visualisatie die de opkomst van Indonesië laat zien qua inwonersaantallen.
+		<p> De bart chart race heb ik gemaakt met Flourish Studio. Het is een leuke, bewegende visualisatie die de opkomst van Indonesië laat zien qua inwonersaantallen. De chart laat zien hoe snel het bevolkingsaantal stijgt vergeleken met andere landen. Flourish Studio is een fijn programma om te gebruiken voor visualisaties. Je kan in een interface een visualisatie maken die daarbij zelf de code genereert. Ik had zelf veel moeite met javascript dus was dit een fijne oplossing.
 		</p>
 		</div>
 		
@@ -163,7 +178,7 @@
 		</script>
 		
 		<div class='paragraaf'>
-		<p> Ik heb datawrapper gebruikt een inzicht te geven over de min en max temperatuur in Indonesië op jaarbasis. Het gaat daarmee over het gemiddelde per dag. Data wrapper toevoegen gaat met een iframe
+		<p> Ik heb datawrapper gebruikt een inzicht te geven over de min en max temperatuur in Indonesië op jaarbasis. De grafiek gaat over de minimale en maximale temperaturen per maand. Data wrapper toevoegen gaat met een iframe. Bij Data wrapper gebruik je ook een interface om de code voor de chart te genereren.
 		</p>
 		</div>
 		
@@ -177,7 +192,7 @@
 		<br><br>
 		De meeste tijd heb bij mij in de kaartviewers gezeten en de bronnen daarin toevoegen. Als ik in de toekomst nog kaartviewers met JS ga maken gaat mijn absolute voorkeur naar leaflet, omdat ik deze het fijnste vind in gebruik.
 		</p>
-				<div class="koptekst" <h1> <b>Bedankt voor de lessen en het helpen met het regelen van de herkansing!</b> </h1></div>
+				<div class="koptekst" <h1> <b>Bedankt voor de lessen en het helpen met het regelen van de herkansing!</b> </h1s></div>
 		</div>
 		
 	</body>
